@@ -3,41 +3,57 @@
 }
 html{
     background-color: #060b19;
-    
+    font-family: "Rubik",sans-serif;
 }
 
 nav{
-    display: flex;
+    display:flex;
+    width: 100%;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: space-around;
-    align-items: center;
     gap: 1rem;
     height: 10vh;
     margin: 0px;
     overflow: hidden;
+    border-bottom: 1px solid white;
+    align-items: center;
+    
 }
+     
 
 
-nav > .link-section
+ .link-section
 {
-  padding: 3rem 2rem;
+    padding: 3rem 2rem;
     display: flex;
     gap: 1rem;
     border-left: 1px solid white;
     align-items: center;
     justify-content: center;
+    
 }
-.social-link{
+.social-link,.GIT{
+    padding: 3rem 2rem;
     display: flex;
     align-items: center;
     justify-content: center;
+    border-left: .5px solid white;
+    gap: 1rem;
+   
+ 
+    
 }
 
+.link-section,.social-link,.fist{
+     flex-basis: calc(100%/3);
+     flex-grow:1;
+}
 
 a{
      text-decoration: none;
      font-size: 1rem;
+     color: white;
+     font-weight: 400;
 }
 
 i{
@@ -45,6 +61,7 @@ i{
 }
 .fist {
         font-weight: 900;
+        size: portrait
  
 }
 
