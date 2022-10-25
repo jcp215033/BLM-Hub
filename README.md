@@ -41,3 +41,16 @@ Primarily educating younger people, secondary it would be the older generation a
 - Timeline and history, evolution of civil rights 
 - Who/how to support 
 - How to move forward as a unified movement 
+
+
+
+
+Page 1:  What’s Happened? (Carousel)
+A brief social history of the BLM movement starting with the 2020 and how the death of George Floyd was the catalyst for the movement. 
+Through the carousel it will explain events from 2020, 2021, and 2022. 
+
+Page 2: About Us: (Carousel)
+This page will explain our purpose. This will include what we will be providing for the audience in light of the context of the previous three years. Explaining the BLM movement, who and how to support the movement and your local community, and how this website will act as a resource hub that any of you can trust. 
+
+Page 3: Next Steps: (Scroll)
+This will be a mutable page that has submitted resources, news, and events. It will have a way for users to donate to the vetted charities they will be supporting. It will include a pseudo login so that verified users and the greater community can add resources and events that support the movement on both a national and local scale. 
