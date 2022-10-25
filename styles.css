@@ -26,7 +26,7 @@ nav{
 {
     padding: 3rem 2rem;
     display: flex;
-    gap: 1rem;
+    gap: 2rem;
     border-left: 1px solid white;
     align-items: center;
     justify-content: center;
@@ -38,14 +38,14 @@ nav{
     align-items: center;
     justify-content: center;
     border-left: .5px solid white;
-    gap: 1rem;
+    gap: 2rem;
    
  
     
 }
 
 .link-section,.social-link,.fist{
-     flex-basis: calc(100%/3);
+     flex-basis: calc(100%/4);
      flex-grow:1;
 }
 
@@ -60,8 +60,8 @@ i{
     color:white;
 }
 .fist {
-        font-weight: 900;
-        size: portrait
+        font-weight: bold;
+        padding: 3rem 2rem;
  
 }
 
