@@ -14,7 +14,7 @@ HTML/CSS website by Julian, Trevon, &amp; Kristen
 
 # Project Proposal:
 
-_What is the social issue that you hope to raise awareness for with your project? (1 - 2 sentences)
+*What is the social issue that you hope to raise awareness for with your project? *
 
 Black Lives Matter movement not organization 
 In light of recent events, BLM or
@@ -27,13 +27,13 @@ Wikipedia of resources
 Counter arguments to BLM, includes All, Blue, and White Lives Matter and other disinformation campaigns 
 
 
-_Why is this issue important to your group? (3 - 5 sentences)
+*Why is this issue important to your group?*
 It is a very relevant social issue that impacts a lot of american society, the state of the political makes it more pressing
 
-_Who is the intended audience for this website? (1 - 2 sentences)
+*Who is the intended audience for this website? *
 Primarily educating younger people, secondary it would be the older generation as the social movement can spread faster that way
 
-_What are the key questions that you hope your website will answer for your audience? (At least three key questions)
+* What are the key questions that you hope your website will answer for your audience? *
 - What is the blm movement?
 - How to help and resources to learn more 
 - Timeline and history, evolution of civil rights 
