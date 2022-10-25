@@ -4,12 +4,12 @@ HTML/CSS website by Julian, Trevon, &amp; Kristen
 
 
 ## Proposed Changes so far: 
-Main Page/About Us
-Resources 
-News / Events/ Calendar 
-Civil Rights/ BLM Timeline
-Discussion Board / Verification Page
-Donations 
+- Main Page/About Us
+- Resources 
+- News / Events/ Calendar 
+- Civil Rights/ BLM Timeline
+- Discussion Board / Verification Page
+- Donations 
 
 
 # Project Proposal:
