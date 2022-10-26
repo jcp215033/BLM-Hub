@@ -10,7 +10,7 @@ HTML/CSS website by Julian, Trevon, &amp; Kristen
 - Civil Rights/ BLM Timeline
 - Discussion Board / Verification Page
 - Donations 
-
+ 
 
 # Project Proposal:
 
