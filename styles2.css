@@ -1,91 +1,185 @@
+:root {
+  --border-color: rgb(255,255,255,0.3);
+
+}
+
 *{
-    padding: 0;
-    margin:0;
     box-sizing: border-box;
+     margin: 0px;
+
 }
 
 html{
     background-color: #060b19;
-    font-family: "Rubik",sans-serif;
+    font-family: 'Space Grotesk', sans-serif;
+    height:100%;
+
 }
-.navbar-toggler {
-    background-color: #060b19;
-    filter: invert(100%);
+body{
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
 }
 
-#nav-bar{
-   background-color: #060b19; 
-   color: white;
-}
-#about-us{
-    color: white;
-}
-#next-up{
-    color: white;
-}
-#get-in-touch{
-  color: white;
-  
-}
-main{
-    flex-grow: 1;
-}
- 
-@media(min-width:576px){
-    #nav-bar{
-        border-bottom: 1px solid white;
-        height: 12vh;
-    }
-    .nav-item{
+nav{
     display:flex;
     width: 100%;
-    flex-wrap: nowrap;
-    margin: 0px;
-    overflow: hidden;
     flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 1rem;
+    height: 10vh;
+    border-bottom: 1px solid var(--border-color);
     align-items: center;
-    }
-    .fist {
-        font-weight: bold;
-        padding: 2% 2%;
-        margin-right: 25%;
-    }
-    .navbar-nav
-    {
-        min-width: 100%;
-    }
-   #about-us{
-        padding-left: 25%;
-        max-width: 100%;
-        border-left: 1px solid white;
-   }
-   #up-next{
-       padding-right: 61%;
-   }
-   #get-in-touch{
-    color: white;
-    margin-left:40%
-}
-   #social-link{
-       display: flex;
-       display-direction: column;
-       align-items: center;
-   }
-   .fa-xl{
-       margin: 0 10%;
-   }
-   li{
-       margin: 0;
-   }
-   main{
-    flex-grow: 1;
-}
-    main > section{
-        display: grid;
-        height: 100%;
-}
-    main > section > article-section{
-        height: 100%;
-    }
 
+}
+
+
+nav> .nav-section{
+    padding: 3rem 2rem;
+    border-left: 1px solid var(--border-color);
+
+}
+
+.next-up{
+    color: #716cae;
+}
+
+ #nav-link-section
+{
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    justify-content:center;
+}
+#nav-social-section,#nav-donate-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+#nav-link-section,#nav-social-section,#nav-fist-section{
+     flex-basis: calc(100%/4);
+
+}
+#nav-donate-section{
+    flex-grow:1;
+}
+
+a{
+     text-decoration: none;
+     font-size: 1rem;
+     color: white;
+     font-weight: 400;
+}
+p{
+    font-family: 'Space Grotesk', sans-serif;
+    color: #747083;
+    font-size: 1rem;
+    line-height: 160%;
+}
+
+i{
+    color:white;
+}
+#nav-fist-section {
+        font-weight: bold;
+        padding: 3rem 2rem;
+
+}
+
+h1{
+    color: white;
+}
+#top-nav{
+    background-color: #060b19;
+}
+
+.img-one-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-one{
+     display: flex;
+     justify-content: center;
+     max-height: 65%;
+     position: absolute;
+}
+
+.first-row{
+    background-color: black;
+   height: 80vh;
+}
+.main-title{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.second-row{
+    background-color: #060b19;
+    color: #716cae;
+    text-align: center;
+}
+.img-two{
+    margin-left: .4rem;
+    width: 100%;
+}
+.col-7{
+    margin-top: 10px;
+}
+p{
+    color: white;
+    
+}
+.what-is-blm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+    padding: 0 1rem;
+}
+.quote{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    padding: 0 5.8%;
+}
+.quote>p{
+    color: white;
+    
+}
+.quote>figcaption{
+        padding-top: 0;
+        padding-right: 21%;
+}
+.third-row{
+    background-color: black;
+    color: #716cae;
+    text-align: center;
+}
+.img-three{
+    max-width: 98%;
+}
+.who-started{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+    padding: 0 1rem;
+}
+figcaption{
+    padding: 1rem 0;
+    font-size: 12px;
+    color: #716cae;
+}
+.img-four{
+    max-width: 100%;
+}
+.forth-row{
+    background-color: #060b19
 }
