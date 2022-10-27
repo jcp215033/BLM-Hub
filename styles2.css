@@ -212,8 +212,8 @@ img {
     justify-content: center;
 }
 .card{
-    height: 97%;
-    width: 50%;
+    height: 100%;
+    width: 60%;
     padding: 0 0;
     margin: auto;
     background-color: #716cae;
@@ -223,4 +223,43 @@ img {
 }
 .bg-dark {
     background-color: #060b19 !important;
+}
+@media(max-width:700px){
+    .top-quote{
+     display: none;   
+    }
+    .img-one{
+        min-width: 100%;
+    }
+    .second-row{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .third-row{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    .forth-row{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .img-four{
+        min-width: 305px;
+        
+    }
+    .slid-show{
+        min-width: 100%;
+    }
+    .card{
+    height: 100%;
+    width: 40%;
+    }
+    
 }
