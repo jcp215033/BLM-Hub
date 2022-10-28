@@ -36,7 +36,7 @@ nav{
 
 nav> .nav-section{
     padding: 3rem 2rem;
-    border-left: 1px solid var(--border-color);
+    
     
 }
 
@@ -50,18 +50,19 @@ nav> .nav-section{
     gap: 3rem;
     align-items: center;
     justify-content:center;
+    border-left: 1px solid var(--border-color);
 }
 #nav-social-section,#nav-donate-section{
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 2rem;
-    
+    border-left: 1px solid var(--border-color);
 }
 
 #nav-link-section,#nav-social-section,#nav-fist-section{
-     flex-basis: calc(100%/4);
-
+    flex-basis: calc(100%/4);
+    
 }
 #nav-donate-section{
     flex-grow:1;
@@ -109,7 +110,6 @@ main {
 }
 
  main > article{
-    position: absolute;
     left: 0px;
     height: 90%;
     width: 100%;
@@ -117,11 +117,11 @@ main {
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 2fr 1fr;
     position: absolute;
-    transition: transform 400ms ease;
     background-color: #060b19;
-
-
 }
+
+
+    
 main > article>.article-section{
     
     max-width: none;
@@ -213,3 +213,25 @@ main > article>.nav-section2{
     min-width: 100%;
     object-fit: cover;
 }
+
+
+@media only screen 
+     and (max-width: 480px) { 
+        nav {
+        display: flex;
+        max-width: 600px;
+        min-height: 100px;
+        max-height: 800px;
+        justify-content: space-between;
+        flex-direction: column;
+        flex-wrap: wrap;
+        }
+            
+        #nav-fist-section{
+            display: none;
+        }
+        nav> .nav-section{
+    padding:0;
+            
+        }
+    }
