@@ -224,6 +224,7 @@ img {
 .bg-dark {
     background-color: #060b19 !important;
 }
+
 @media(max-width:700px){
     .top-quote{
      display: none;   
@@ -250,16 +251,26 @@ img {
         align-items: center;
         text-align: center;
     }
-    .img-four{
-        min-width: 305px;
-        
-    }
     .slid-show{
         min-width: 100%;
     }
     .card{
-    height: 100%;
-    width: 40%;
+        height: 100%;
+        width: 40%;
     }
-    
+        nav {
+    display: flex;
+        min-height: 100px;
+        justify-content: space-between;
+        flex-direction: column;
+        }
+            
+        #nav-fist-section{
+            display: none;
+        }
+        nav> .nav-section{
+            padding:0;
+            border-left: 0;
+        }
+        
 }
