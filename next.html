@@ -33,7 +33,7 @@
 
 <body>
     <section>
-        <h2>Member Sign In</h2>
+        <h2>Member Sign In/ Sign Up</h2>
         <form>
             <div class="form-group">
                 <label for="exampleInputEmail1">Email address</label>
@@ -45,7 +45,16 @@
                 <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
             </div>
             <button type="submit" class="btn btn-primary">Sign In</button>
+            <div class="custom-control custom-switch">
+                <input type="checkbox" class="custom-control-input" id="customSwitches">
+                <label class="custom-control-label" for="customSwitches">Not a member? Sign me up</label>
+            </div>
+            <div class="custom-control custom-switch">
+                <input type="checkbox" class="custom-control-input" id="customSwitch1" checked>
+                <label class="custom-control-label" for="customSwitch1">Sign up for email alerts, news, events, and new resources</label>
+            </div>
         </form>
+
     </section>
     <br>
     <div class="accordion" id="accordionExample">
@@ -183,12 +192,12 @@
         <div class="card">
             <div class="card-header" id="headingTwo">
                 <h5 class="mb-0">
-                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
                         Upcoming Events (October through December)
                     </button>
                 </h5>
             </div>
-            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+            <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordionExample">
                 <div class="card-body">
                     <h3>Oct 30, Racial Healing Circle: Brave space for conversations about race.
                     </h3>
@@ -228,12 +237,12 @@
         <div class="card">
             <div class="card-header" id="headingThree">
                 <h5 class="mb-0">
-                    <button id="donate" class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    <button id="donate" class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
                         Donate
                     </button>
                 </h5>
             </div>
-            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+            <div id="collapseThree" class="collapse show" aria-labelledby="headingThree" data-parent="#accordionExample">
                 <div class="card-body">
                     <p>You can donate to anyone of the organizations below through their website. If you you wish to help to all these charities, please make a donation to our website here. Thank you for your help. </p>
                     <form>
@@ -361,6 +370,24 @@
             </div>
         </div>
     </div>
+    <h2>Feedback Form</h2>
+    <form>
+
+        <div class="form-group">
+            <label for="exampleFormControlSelect1">Select One:</label>
+            <select class="form-control" id="exampleFormControlSelect1">
+                <option>Comments and/or complaints</option>
+                <option>Request a specific resource</option>
+                <option>Include a specific resource</option>
+                <option>Other</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlTextarea1">Feedback:</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
 
 </body>
 
