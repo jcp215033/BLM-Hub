@@ -12,32 +12,32 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </head>
 <header>
-    <div class="fist">
-        <i class="fa-regular fa-hand-back-fist fa-2xl "></i>
-    </div>
-    <div class="link-section">
-        <a href="about_us.html">ABOUT US</a>
-        <a href="next.html"> NEXT UP</a>
-
-    </div>
-    <div class="social-link">
-        <i class="fa-brands fa-twitter fa-xl"></i>
-        <i class="fa-brands fa-instagram fa-xl"></i>
-        <i class="fa-brands fa-youtube fa-xl"></i>
-    </div>
-    <div class="GIT">
-        <a href="next.html#donate">DONATE</a>
-    </div>
+    <nav>
+        <div id="nav-fist-section" class="nav-section">
+            <a href="whats_happened.html"><i class="fa-regular fa-hand-back-fist fa-2xl "></i></a>
+        </div>
+        <div id="nav-link-section" class="nav-section">
+            <a href="about_us.html">ABOUT US</a>
+            <a class="next-up" href="next.html">NEXT UP</a>
+        </div>
+        <div id="nav-social-section" class="nav-section">
+            <i class="fa-brands fa-twitter fa-xl"></i>
+            <i class="fa-brands fa-instagram fa-xl"></i>
+            <i class="fa-brands fa-youtube fa-xl"></i>
+        </div>
+        <div id="nav-donate-section" class="nav-section">
+            <a href="next.html#donate">DONATE</a>
+        </div>
     </nav>
 </header>
 
 <body>
     <section>
-        <h2>Member Sign In</h2>
+        <h2>Member Sign In/ Sign Up</h2>
         <form>
             <div class="form-group">
                 <label for="exampleInputEmail1">Email address</label>
-                <input type="email" class="form-control " id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                <input type="email" class="form-control col-xs-2" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
                 <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
             </div>
             <div class="form-group">
@@ -45,153 +45,28 @@
                 <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
             </div>
             <button type="submit" class="btn btn-primary">Sign In</button>
+            <div class="custom-control custom-switch">
+                <input type="checkbox" class="custom-control-input" id="customSwitches">
+                <label class="custom-control-label" for="customSwitches">Not a member? Sign me up</label>
+            </div>
+            <div class="custom-control custom-switch">
+                <input type="checkbox" class="custom-control-input" id="customSwitch1" checked>
+                <label class="custom-control-label" for="customSwitch1">Sign up for email alerts, news, events, and new resources</label>
+            </div>
         </form>
+
     </section>
     <br>
     <div class="accordion" id="accordionExample">
         <div class="card">
             <div class="card-header" id="headingOne">
                 <h5 class="mb-0">
-                    <button id ="donate" class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        Donate
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Trusted Resources
                     </button>
                 </h5>
             </div>
             <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-                <div class="card-body">
-                    <p>You can donate to anyone of the organizations below through their website. If you you wish to help to all these charities, please make a donation to our website here. Thank you for your help. </p>
-                    <form>
-                        <div class="form-group">
-                            <label for="exampleFormControlInput1">Name</label>
-                            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="First Name, Last Name">
-                        </div>
-                        <div class="form-group">
-                            <label for="exampleFormControlInput1">Email</label>
-                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="address@email.com">
-                        </div>
-                        <div class="form-group">
-                            <label for="exampleFormControlInput1">Phone Number</label>
-                            <input type="tel" class="form-control" id="exampleFormControlInput1" placeholder="### ### ####">
-                        </div>
-                        <div class="form-group">
-                            <label for="exampleFormControlInput1">Donation Amount</label>
-                            <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="$">
-                        </div>
-
-                        <div class="form-group">
-                            <label for="exampleFormControlTextarea1">Do you have anything to comment regarding your donation?
-                            </label>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                        </div>
-                        <form action="https://www.paypal.com/donate" method="post" target="_top">
-                            <input type="hidden" name="business" value="NMS2W63GN6E6L" />
-                            <input type="hidden" name="no_recurring" value="0" />
-                            <input type="hidden" name="item_name" value="Don't actually donate, 'tis a fake website. : )" />
-                            <input type="hidden" name="currency_code" value="USD" />
-                            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
-                            <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
-                        </form>
-
-                    </form>
-                    <br>
-                    <section class="charitiesCards">
-
-                        <div class="card" style="width: 18rem;">
-                            <img class="card-img-top" src="https://www.rd.com/wp-content/uploads/2020/06/eji-dot-org.jpg?resize=1024,557" alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">The Equal Justice Initiative</h5>
-                                <p class="card-text">The Equal Justice Initiative “is committed to ending mass incarceration and excessive punishment in the United States, to challenging racial and economic injustice, and to protecting basic human rights for the most vulnerable people in American society.</p>
-                                <a href="https://eji.org/" target="_blank" class="btn btn-primary">Visit</a>
-                            </div>
-                        </div> <br>
-
-
-                        <div class="card" style="width: 18rem;">
-                            <img class="card-img-top" src="https://www.rd.com/wp-content/uploads/2020/06/naacpldf-dot-org-1.jpg?resize=1024,557" alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">NAACP Legal Defense and Education Fund</h5>
-                                <p class="card-text">The NAACP Legal Defense and Education Fund, Inc. is our country’s best legal organization fighting for racial justice. Their mission statement says, “Through litigation, advocacy, and public education, LDF seeks structural changes to expand democracy, eliminate disparities, and achieve racial justice in a society that fulfills the promise of equality for all Americans.”</p>
-                                <a href="https://www.naacpldf.org/" target="_blank" class="btn btn-primary">Visit</a>
-                            </div>
-                        </div> <br>
-
-
-                        <div class="card" style="width: 18rem;">
-                            <img class="card-img-top" src="https://www.rd.com/wp-content/uploads/2020/06/thelovelandfoundation-dot-org.jpg?resize=1024,<557></557>" alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">The Loveland Foundation</h5>
-                                <p class="card-text">The Loveland Foundation is an amazing non-profit that helps communities of color, especially women and girls, in need of mental health support. Their website states, “Black women and girls deserve access to healing, and that healing will impact generations.”</p>
-                                <a href="https://thelovelandfoundation.org/" target="_blank" class="btn btn-primary">Visit</a>
-                            </div>
-                        </div> <br>
-
-
-                        <div class="card" style="width: 18rem;">
-                            <img class="card-img-top" src="https://www.rd.com/wp-content/uploads/2020/06/aclu-dot-org-1.jpg?resize=1024,557" alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">The ACLU</h5>
-                                <p class="card-text">The American Civil Liberties Union (ACLU) works to ensure that our country lives up to the promises of the United States Constitution by pushing for structural reform. </p>
-                                <a href="https://www.aclu.org/" target="_blank" class="btn btn-primary">Visit</a>
-                            </div>
-                        </div> <br>
-
-
-                        <div class="card" style="width: 18rem;">
-                            <img class="card-img-top" src="https://www.rd.com/wp-content/uploads/2020/06/npap.jpg?resize=768,418" alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">National Police Accountability Project
-
-                                </h5>
-                                <p class="card-text">The NPAP is a non-profit arm of the National Lawyers Guild, the first racially integrated national bar association. Their mission is to protect human and civil rights in police-civilian encounters and to promote accountability of law enforcement offices that have violated the law or Constitution.</p>
-                                <a href="https://www.nlg-npap.org/" target="_blank" class="btn btn-primary centerVisits">Visit</a>
-                            </div>
-                        </div <br>
-
-
-                        <div class="card" style="width: 18rem;">
-                            <img class="card-img-top" src="https://www.rd.com/wp-content/uploads/2020/06/joincampaignzero-dot-org.jpg?resize=1024,558" alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">Campaign Zero
-                                </h5>
-                                <p class="card-text">Working to combat police brutality is one of the most important uses for Black Lives Matter donations. Campaign Zero is working to end police brutality by calling on local, state, and federal lawmakers to take action and change to use data-driven policy solutions to hold police accountable. </p>
-                                <a href="https://campaignzero.org/" target="_blank" class="btn btn-primary">Visit</a>
-                            </div>
-                        </div> <br>
-
-                        <div class="card" style="width: 18rem;">
-                            <img class="card-img-top" src="https://www.rd.com/wp-content/uploads/2020/06/colorofchange-dot-org-1.jpg?resize=1024,557" alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">Color of Change</h5>
-                                <p class="card-text">Color of Change is the largest online racial justice organization in the country. Their website states, “We help people respond effectively to injustice in the world around us. As a national online force driven by 1.7 million members, we move decision-makers in corporations and government to create a more human and less hostile world for Black people in America.”</p>
-                                <a href="https://colorofchange.org/" target="_blank" class="btn btn-primary">Visit</a>
-                            </div>
-                        </div> <br>
-
-
-                        <div class="card" style="width: 18rem;">
-                            <img class="card-img-top" src="https://i.imgur.com/aemB8MY.png" alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">Go Fund Me</h5>
-                                <p class="card-text">Support directly by donating to families of police brutality and other injustices.</p>
-                                <a href="https://www.gofundme.com/c/celebrate-black-joy" target="_blank" class="btn btn-primary">Visit</a>
-                            </div>
-                        </div>
-
-                    </section>
-
-
-                </div>
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-header" id="headingTwo">
-                <h5 class="mb-0">
-                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                        Resources
-                    </button>
-                </h5>
-            </div>
-            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
                 <div class="card-body">
                     <h3>Exercise your right to vote
                     </h3>
@@ -308,57 +183,222 @@
                     <a target="_blank" href="https://www.netflix.com/">See You Yesterday (Stefon Bristol)</a> — Netflix<br>
                     <a target="_blank" href="https://www.netflix.com/">Selma (Ava DuVernay)</a> — Netflix<br>
                     <a target="_blank" href="https://www.amazon.com/hp/video/offers/ref=dvm_us_dl_sl_go_brsa_mkw_sPfLbcut2-dc/136-8692417-6942740?_encoding=UTF8&dvah=offers&gclid=EAIaIQobChMI1J2rgdeB-wIVjrbICh1_wgr8EAAYASAAEgICAvD_BwE&mrntrk=pcrid_448130500925_slid__pgrid_29008589832_pgeo_9004417_x__ptid_kwd-12712851">The Black Panthers: Vanguard of the Revolution</a> — Available to rent<br>
-                    <a target="_blank" href="https://www.amazon.com/hp/video/offers/ref=dvm_us_dl_sl_go_brsa_mkw_sPfLbcut2-dc/136-8692417-6942740?_encoding=UTF8&dvah=offers&gclid=EAIaIQobChMI1J2rgdeB-wIVjrbICh1_wgr8EAAYASAAEgICAvD_BwE&mrntrk=pcrid_448130500925_slid__pgrid_29008589832_pgeo_9004417_x__ptid_kwd-12712851">The Hate U Give (George Tillman Jr.)</a> — Available to rent for free<br>
                     <a target="_blank" href="https://www.netflix.com/">When They See Us (Ava DuVernay)</a> — Netflix<br>
+                    <a target="_blank" href="https://www.amazon.com/hp/video/offers/ref=dvm_us_dl_sl_go_brsa_mkw_sPfLbcut2-dc/136-8692417-6942740?_encoding=UTF8&dvah=offers&gclid=EAIaIQobChMI1J2rgdeB-wIVjrbICh1_wgr8EAAYASAAEgICAvD_BwE&mrntrk=pcrid_448130500925_slid__pgrid_29008589832_pgeo_9004417_x__ptid_kwd-12712851">The Hate U Give (George Tillman Jr.)</a> — Available to rent for free<br>
                     </p>
                 </div>
             </div>
         </div>
         <div class="card">
-            <div class="card-header" id="headingThree">
+            <div class="card-header" id="headingTwo">
                 <h5 class="mb-0">
-                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                         Upcoming Events (October through December)
                     </button>
                 </h5>
             </div>
-            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
                 <div class="card-body">
                     <h3>Oct 30, Racial Healing Circle: Brave space for conversations about race.
                     </h3>
                     <iframe width="560" height="315" src="https://www.eventbrite.com/e/racial-healing-circle-brave-space-for-conversations-about-race-registration-162822680019?aff=ebdssbonlinesearch" title="Event Brite" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
                     <h3>
-                    Oct 30, Here We Stand: The Black Athlete/Activist</h3>
+
+                        <div class="card" style="width: 18rem;">
+                    <iframe src="https://www.eventbrite.com/e/racial-healing-circle-brave-space-for-conversations-about-race-registration-162822680019?aff=ebdssbonlinesearch" title="Event Brite" allowfullscreen></iframe><br>
+                            <div class="card-body">
+                                <h5 class="card-title">The Equal Justice Initiative</h5>
+                                <p class="card-text">The Equal Justice Initiative “is committed to ending mass incarceration and excessive punishment in the United States, to challenging racial and economic injustice, and to protecting basic human rights for the most vulnerable people in American society.</p>
+                                <a href="https://eji.org/" target="_blank" class="btn btn-primary">Visit</a>
+                            </div>
+                        </div> <br>
+
+                        Oct 30, Here We Stand: The Black Athlete/Activist
+                    </h3>
                     <iframe width="560" height="315" src="https://www.eventbrite.com/e/here-we-stand-the-black-athleteactivist-tickets-440440989857?aff=ebdssbonlinesearch" title="Event Brite" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
                     <h3>
-                    Oct 31, We Gon' Be Alright; A Space for Black Healing</h3>
+                        Oct 31, We Gon' Be Alright; A Space for Black Healing</h3>
                     <iframe width="560" height="315" src="https://www.eventbrite.com/e/we-gon-be-alright-a-space-for-black-healing-tickets-450991727397?aff=ebdssbonlinesearch" title="Event Brite" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
                     <h3>
-                    Nov 03, Business of Race: Learning Community</h3>
+                        Nov 03, Business of Race: Learning Community</h3>
                     <iframe width="560" height="315" src="https://www.eventbrite.com/e/business-of-race-learning-community-tickets-316532686787?aff=ebdssbonlinesearch" title="Event Brite" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
                     <h3>
-                    Nov 13, "Come Meet A Black Person" Anti-Racism Virtual Series</h3>
+                        Nov 13, "Come Meet A Black Person" Anti-Racism Virtual Series</h3>
                     <iframe width="560" height="315" src="https://www.eventbrite.com/e/come-meet-a-black-person-anti-racism-virtual-series-tickets-112824362706?aff=ebdssbonlinesearch" title="Event Brite" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
                     <h3>
-                    Nov 22, Black Clinicians Collective</h3>
+                        Nov 22, Black Clinicians Collective</h3>
                     <iframe width="560" height="315" src="https://www.eventbrite.com/e/november-22-black-clinicians-collective-tickets-424561614217?aff=ebdssbonlinesearch" title="Event Brite" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
                     <h3>
-                    Nov 24, Black Lives and the System</h3>
+                        Nov 24, Black Lives and the System</h3>
                     <iframe width="560" height="315" src="https://www.eventbrite.com/e/black-lives-and-the-system-tickets-272341519817?aff=ebdssbonlinesearch&keep_tld=1" title="Event Brite" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
                     <h3>
-                    Nov 30, Your Black Matters</h3>
+                        Nov 30, Your Black Matters</h3>
                     <iframe width="560" height="315" src="https://www.eventbrite.com/e/your-black-matters-tickets-115070111802?aff=ebdssbonlinesearch" title="Event Brite" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
                     <h3>
-                    Dec 06, Transing Afro-Latinx Studies and Identity</h3>
+                        Dec 06, Transing Afro-Latinx Studies and Identity</h3>
                     <iframe width="560" height="315" src="https://www.eventbrite.com/e/transing-afro-latinx-studies-and-identity-tickets-400236336657?aff=ebdssbonlinesearch" title="Event Brite" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
                     <h3>Dec 08, Pollyanna Ruiz - Remembering and Forgetting Black Lives Matter</h3>
-                    
+
                     <iframe width="560" height="315" src="https://www.eventbrite.com/e/pollyanna-ruiz-remembering-and-forgetting-black-lives-matter-tickets-429850774237?aff=ebdssbonlinesearch&keep_tld=1" title="Event Brite" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingThree">
+                <h5 class="mb-0">
+                    <button id="donate" class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                        Donate
+                    </button>
+                </h5>
+            </div>
+            <div id="collapseThree" class="collapse show" aria-labelledby="headingThree" data-parent="#accordionExample">
+                <div class="card-body">
+                    <p>You can donate to anyone of the organizations below through their website. If you you wish to help to all these charities, please make a donation to our website here. Thank you for your help. </p>
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">Name</label>
+                            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="First Name, Last Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">Email</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="address@email.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">Phone Number</label>
+                            <input type="tel" class="form-control" id="exampleFormControlInput1" placeholder="### ### ####">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">Donation Amount</label>
+                            <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="$">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="exampleFormControlTextarea1">Do you have anything to comment regarding your donation?
+                            </label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                        <form action="https://www.paypal.com/donate" method="post" target="_top">
+                            <input type="hidden" name="business" value="NMS2W63GN6E6L" />
+                            <input type="hidden" name="no_recurring" value="0" />
+                            <input type="hidden" name="item_name" value="Don't actually donate, 'tis a fake website. : )" />
+                            <input type="hidden" name="currency_code" value="USD" />
+                            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+                            <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+                        </form>
+
+                    </form>
+                    <br>
+                    <section class="charitiesCards">
+
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="https://www.rd.com/wp-content/uploads/2020/06/eji-dot-org.jpg?resize=1024,557" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">The Equal Justice Initiative</h5>
+                                <p class="card-text">The Equal Justice Initiative “is committed to ending mass incarceration and excessive punishment in the United States, to challenging racial and economic injustice, and to protecting basic human rights for the most vulnerable people in American society.</p>
+                                <a href="https://eji.org/" target="_blank" class="btn btn-primary">Visit</a>
+                            </div>
+                        </div> <br>
+
+
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="https://www.rd.com/wp-content/uploads/2020/06/naacpldf-dot-org-1.jpg?resize=1024,557" alt="Card image cap">
+
+                            <div class="card-body">
+                                <h5 class="card-title">NAACP Legal Defense and Education Fund</h5>
+                                <p class="card-text">The NAACP Legal Defense and Education Fund, Inc. is our country’s best legal organization fighting for racial justice. Their mission statement says, “Through litigation, advocacy, and public education, LDF seeks structural changes to expand democracy, eliminate disparities, and achieve racial justice in a society that fulfills the promise of equality for all Americans.”</p>
+                                <a href="https://www.naacpldf.org/" target="_blank" class="btn btn-primary">Visit</a>
+                            </div>
+                        </div> <br>
+
+
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="https://www.rd.com/wp-content/uploads/2020/06/thelovelandfoundation-dot-org.jpg?resize=1024,<557></557>" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">The Loveland Foundation</h5>
+                                <p class="card-text">The Loveland Foundation is an amazing non-profit that helps communities of color, especially women and girls, in need of mental health support. Their website states, “Black women and girls deserve access to healing, and that healing will impact generations.”</p>
+                                <a href="https://thelovelandfoundation.org/" target="_blank" class="btn btn-primary">Visit</a>
+                            </div>
+                        </div> <br>
+
+
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="https://www.rd.com/wp-content/uploads/2020/06/aclu-dot-org-1.jpg?resize=1024,557" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">The ACLU</h5>
+                                <p class="card-text">The American Civil Liberties Union (ACLU) works to ensure that our country lives up to the promises of the United States Constitution by pushing for structural reform. </p>
+                                <a href="https://www.aclu.org/" target="_blank" class="btn btn-primary">Visit</a>
+                            </div>
+                        </div> <br>
+
+
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="https://www.rd.com/wp-content/uploads/2020/06/npap.jpg?resize=768,418" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">National Police Accountability Project
+
+                                </h5>
+                                <p class="card-text">The NPAP is a non-profit arm of the National Lawyers Guild, the first racially integrated national bar association. Their mission is to protect human and civil rights in police-civilian encounters and to promote accountability of law enforcement offices that have violated the law or Constitution.</p>
+                                <a href="https://www.nlg-npap.org/" target="_blank" class="btn btn-primary centerVisits">Visit</a>
+                            </div>
+                        </div <br>
+
+
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="https://www.rd.com/wp-content/uploads/2020/06/joincampaignzero-dot-org.jpg?resize=1024,558" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Campaign Zero
+                                </h5>
+                                <p class="card-text">Working to combat police brutality is one of the most important uses for Black Lives Matter donations. Campaign Zero is working to end police brutality by calling on local, state, and federal lawmakers to take action and change to use data-driven policy solutions to hold police accountable. </p>
+                                <a href="https://campaignzero.org/" target="_blank" class="btn btn-primary">Visit</a>
+                            </div>
+                        </div> <br>
+
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="https://www.rd.com/wp-content/uploads/2020/06/colorofchange-dot-org-1.jpg?resize=1024,557" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Color of Change</h5>
+                                <p class="card-text">Color of Change is the largest online racial justice organization in the country. Their website states, “We help people respond effectively to injustice in the world around us. As a national online force driven by 1.7 million members, we move decision-makers in corporations and government to create a more human and less hostile world for Black people in America.”</p>
+                                <a href="https://colorofchange.org/" target="_blank" class="btn btn-primary">Visit</a>
+                            </div>
+                        </div> <br>
+
+
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="https://i.imgur.com/aemB8MY.png" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Go Fund Me</h5>
+                                <p class="card-text">Support directly by donating to families of police brutality and other injustices.</p>
+                                <a href="https://www.gofundme.com/c/celebrate-black-joy" target="_blank" class="btn btn-primary">Visit</a>
+                            </div>
+                        </div>
+
+                    </section>
+
 
                 </div>
             </div>
         </div>
     </div>
+    <h2>Feedback Form</h2>
+    <form>
+
+        <div class="form-group">
+            <label for="exampleFormControlSelect1">Select One:</label>
+            <select class="form-control" id="exampleFormControlSelect1">
+                <option>Comments and/or complaints</option>
+                <option>Request a specific resource</option>
+                <option>Include a specific resource</option>
+                <option>Other</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlTextarea1">Feedback:</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
 
 </body>
 

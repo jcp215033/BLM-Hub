@@ -1,87 +1,12 @@
-/**{*/
-/*    box-sizing: border-box;*/
-/*}*/
-/*html{*/
-/*    background-color: #060b19;*/
-/*    font-family: "Rubik",sans-serif;*/
-/*}*/
+* {
+    background-color: #060b19 !important;
+    font-family: "Space Grotesk", sans-serif;
+    color: white;
+}
 
-/*nav{*/
-/*    display:flex;*/
-/*    width: 100%;*/
-/*    flex-direction: row;*/
-/*    flex-wrap: nowrap;*/
-/*    gap: 1rem;*/
-/*    height: 10vh;*/
-/*    margin: 0px;*/
-/*    overflow: hidden;*/
-/*    border-bottom: 1px solid white;*/
-/*    align-items: center;*/
-    
-/*}*/
-     
-
-
-/* .link-section*/
-/*{*/
-/*    padding: 3rem 2rem;*/
-/*    display: flex;*/
-/*    gap: 2rem;*/
-/*    border-left: 1px solid white;*/
-/*    align-items: center;*/
-/*    justify-content: center;*/
-    
-/*}*/
-/*.social-link,.GIT{*/
-/*    padding: 3rem 2rem;*/
-/*    display: flex;*/
-/*    align-items: center;*/
-/*    justify-content: center;*/
-/*    border-left: .5px solid white;*/
-/*    gap: 2rem;*/
-   
- 
-    
-/*}*/
-
-/*.link-section,.social-link,.fist{*/
-/*     flex-basis: calc(100%/4);*/
-/*     flex-grow:1;*/
-/*}*/
-
-/*a{*/
-/*     text-decoration: none;*/
-/*     font-size: 1rem;*/
-/*     color: white;*/
-/*     font-weight: 400;*/
-/*}*/
-
-/*i{*/
-/*    color:white;*/
-/*}*/
-/*.fist {*/
-/*        font-weight: bold;*/
-/*        padding: 3rem 2rem;*/
- 
-/*}*/
-
-/*h3{*/
-/*    color: white;*/
-/*}*/
-
-/*main{*/
-/*    display:grid;*/
-/*    justify-items: start;*/
-/*    align-items: center;*/
-/*    justify-content: start;*/
-    
-/*}*/
-/*img{*/
-/*    background-position: center;*/
-/*    background-size: cover;*/
-/*    width: 800px;*/
-/*    height: 500px;*/
-/*}*/
+h2, h3, h4, h5 {
+    color: #716cae;
+}
 
 .charitiesCards {
     display: flex;
@@ -91,6 +16,39 @@
     
 }
 
-.centerVisits {
-    /*align-content: end;*/
+.btn-primary {
+    color: #fff;
+    background-color: #716cae !important;
+    border-color: #716cae !important;
+}
+.custom-control-input:checked~.custom-control-label::before {
+    color: #fff;
+    border-color: #716cae !important;
+    background-color: #716cae !important;
+}
+
+.btn-link {
+    font-weight: 400;
+    color: #c6c2ff !important;
+    text-decoration: none;
+}
+.btn-link:hover {
+    color: #c6c2ff !important;
+    text-decoration: underline;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #c6c2ff !important; 
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
