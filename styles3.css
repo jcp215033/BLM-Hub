@@ -215,3 +215,58 @@ justify-content:space-between;
     float: right;
     width: 100%;
 }
+
+
+/*@media(max-width:576px) {*/
+
+/*.btn-accord {*/
+/*    font-size: 1rem !important;*/
+/*    text-align: left;*/
+/*}*/
+
+
+/*.end-forms {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*}*/
+/*}*/
+
+/*.charitiesCards {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    flex-wrap: nowrap;*/
+
+/*}*/
+
+/*.form-control {*/
+/*    width: 75% !important;*/
+/*}*/
+/*.card {*/
+/*    align-items: start;*/
+/*    flex-wrap: nowrap;*/
+/*}*/
+/*.go-away {*/
+/*    display: none;*/
+/*}*/
+
+/*nav {*/
+/*    display: none !important;*/
+/*}*/
+/*.size {*/
+/*    width: 300px !important;*/
+/*    max-height: 200px !important;*/
+/*}*/
+/*.carousel-caption {*/
+/*    display: none !important;*/
+/*}*/
+
+/*.end-forms2 {*/
+/*    margin-left: auto !important;*/
+/*    margin-right: auto !important;*/
+/*}*/
+
+/*.right-margin {*/
+    
+/*    margin-right: -20px !important;*/
+
+/*}*/
