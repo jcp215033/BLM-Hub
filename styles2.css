@@ -1,10 +1,12 @@
 :root {
     --border-color: rgb(255, 255, 255, 0.3);
+
 }
 
 * {
     box-sizing: border-box;
     margin: 0px;
+    cursor: url(photos/purple5.svg), auto;
 }
 
 html {
@@ -52,8 +54,6 @@ nav>.nav-section {
     gap: 3rem;
     align-items: center;
     justify-content: center;
-    margin-top: 1rem;
-    border-left: 1px solid var(--border-color);
 }
 
 #nav-social-section,
@@ -99,7 +99,6 @@ i {
 #nav-fist-section {
     font-weight: bold;
     padding: 3rem 2rem;
-    margin-top: 1rem;
 
 }
 
@@ -151,6 +150,11 @@ h1 {
 
 .col-7 {
     margin-top: 10px;
+}
+
+p {
+    color: white;
+
 }
 
 .what-is-blm {
@@ -259,34 +263,26 @@ img {
     background-color: #060b19 !important;
 }
 
+.a-color-page {
+    color: #716cae;
+}
+
+.a-color {
+    color: white;
+}
+
+
+.hover-attribute-white:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.hover-attribute-purple:hover {
+    text-decoration: none;
+    color: #716cae;
+}
+
 @media(max-width:700px) {
-    nav {
-        display: flex;
-        min-height: 100px;
-        justify-content: space-between;
-        flex-direction: column;
-        border-bottom: 0;
-    }
-
-    #nav-link-section {
-        margin: 0;
-        border: 0;
-    }
-
-    #nav-social-section,
-    #nav-donate-section {
-        margin: 0;
-        border: 0;
-    }
-
-    #nav-fist-section {
-        display: none;
-    }
-
-    nav>.nav-section {
-        padding: 0;
-    }
-
     .top-quote {
         display: none;
     }
@@ -325,4 +321,22 @@ img {
         height: 100%;
         width: 40%;
     }
+
+    nav {
+        display: flex;
+        min-height: 100px;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    #nav-fist-section {
+        display: none;
+    }
+
+    nav>.nav-section {
+        padding: 0;
+        border-left: 0;
+    }
+
 }
+
