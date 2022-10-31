@@ -2,9 +2,17 @@
     background-color: #060b19 !important;
     font-family: "Space Grotesk", sans-serif;
     color: white;
+    cursor: url(photos/purple5.svg), auto;
+    box-sizing: border-box;
+    margin: 0px;
 }
 
-h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
     color: #716cae;
 }
 
@@ -13,7 +21,7 @@ h2, h3, h4, h5 {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 30px;
-    
+
 }
 
 .btn-primary {
@@ -21,6 +29,7 @@ h2, h3, h4, h5 {
     background-color: #716cae !important;
     border-color: #716cae !important;
 }
+
 .custom-control-input:checked~.custom-control-label::before {
     color: #fff;
     border-color: #716cae !important;
@@ -32,6 +41,7 @@ h2, h3, h4, h5 {
     color: #c6c2ff !important;
     text-decoration: none;
 }
+
 .btn-link:hover {
     color: #c6c2ff !important;
     text-decoration: underline;
@@ -46,9 +56,116 @@ h2, h3, h4, h5 {
     font-weight: 400;
     line-height: 1.5;
     color: #495057;
-    background-color: #c6c2ff !important; 
+    background-color: #c6c2ff !important;
     background-clip: padding-box;
     border: 1px solid #ced4da;
     border-radius: .25rem;
-    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.form-control {
+    width: 35% !important;
+}
+
+nav {
+    display: flex !important;
+    width: 100% !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    gap: 1rem !important;
+    height: 10vh !important;
+    border-bottom: 1px solid white !important;
+    align-items: center !important;
+
+}
+
+nav>.nav-section {
+    padding: 1rem 2rem !important;
+    border-left: 1px solid white !important;
+
+}
+
+#nav-link-section {
+    display: flex !important;
+    gap: 3rem !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+#nav-social-section,
+#nav-donate-section {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 2rem !important;
+}
+
+#nav-link-section,
+#nav-social-section,
+#nav-fist-section {
+    flex-basis: calc(100%/4) !important;
+
+}
+
+#nav-donate-section {
+    flex-grow: 1 !important;
+}
+
+#nav-fist-section {
+    font-weight: bold !important;
+    padding: 1rem 2rem !important;
+
+}
+
+#top-nav {
+    background-color: #060b19 !important;
+}
+
+
+.a-color-page {
+    color: #716cae;
+}
+
+.a-color {
+    color: white;
+}
+
+.hover-attribute-white:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.hover-attribute-purple:hover {
+    text-decoration: none;
+    color: #716cae;
+}
+
+#footer {
+    background-color: #060b19 !important;
+}
+
+.bg-dark {
+    background-color: #060b19 !important;
+}
+
+.blm {
+    width: 100%;
+}
+
+.end-forms {
+    display: flex;
+    justify-content:space-evenly;
+}
+
+.bottom-form1 {
+    width: 100% !important;
+}
+
+.bottom-form2 {
+    width: 150% !important;
+}
+
+.donate-button {
+    background-color: green!important;
+    border-color: green!important;
 }
