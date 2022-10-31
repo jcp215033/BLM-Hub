@@ -232,23 +232,66 @@ main > article>.nav-section2{
     color: #716cae;
 }
 
-@media only screen 
-     and (max-width: 480px) { 
+
+     @media (max-width: 575.98px) 
+     { 
+         body{
+              overflow: auto;
+         }
+         #nav-link-section
+        {
+          
+            gap: 3rem;
+            
+            border-left:0px;
+        }
+        #nav-social-section,#nav-donate-section{
+            
+            border-left:0px;
+        }
+        
+        #nav-link-section,#nav-social-section,#nav-fist-section{
+            flex-basis: calc(100%/3);
+            
+        }
+       
         nav {
         display: flex;
-        max-width: 600px;
-        min-height: 100px;
-        max-height: 800px;
         justify-content: space-between;
-        flex-direction: column;
-        flex-wrap: wrap;
+        flex-direction: row;
+        flex-wrap: nowrap;
         }
             
         #nav-fist-section{
             display: none;
         }
         nav> .nav-section{
-    padding:0;
+    padding:10;
             
         }
+        main > article{
+            width: 100%;
+            display: flex;
+            position: absolute;
+            background-color: #060b19;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .image-section{
+        display: none;
+        flex-wrap: wrap;
+        flex-direction: column;
+        max-width: 40%;
+        max-height: 30%;
+            
+        }
+        main > article>.article-section {
+                display: flex;
+                max-width: 100%;
+                min-height: fit-content; 
+                min-width: 100%;
+        
+            }
+          
     }
