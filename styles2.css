@@ -271,7 +271,6 @@ img {
     color: white;
 }
 
-
 .hover-attribute-white:hover {
     text-decoration: none;
     color: white;
@@ -281,6 +280,7 @@ img {
     text-decoration: none;
     color: #716cae;
 }
+
 
 @media(max-width:700px) {
     .top-quote {
