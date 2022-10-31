@@ -68,58 +68,73 @@ h6{
     width: 35% !important;
 }
 
-nav {
+
+   
+ nav{
     display: flex !important;
-    width: 100% !important;
-    flex-direction: row !important;
-    flex-wrap: nowrap !important;
-    gap: 1rem !important;
-    height: 10vh !important;
-    border-bottom: 1px solid white !important;
-    align-items: center !important;
-
+    flex-direction: row;
+    gap: 1rem;
+    min-height: 1%;
+    max-height: 10%;
+    align-items: center;
+    font-family: 'Space Grotesk', sans-serif;
 }
 
-nav>.nav-section {
-    padding: 1rem 2rem !important;
-    border-left: 1px solid white !important;
 
+ .nav-section{
+    padding: 3rem 2rem;
+    
+    
 }
 
-#nav-link-section {
-    display: flex !important;
-    gap: 3rem !important;
-    align-items: center !important;
-    justify-content: center !important;
+.next-up{
+    color: #716cae;
 }
 
-#nav-social-section,
-#nav-donate-section {
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    gap: 2rem !important;
+ #nav-link-section
+{
+    display:flex;
+    gap: 3rem;
+    align-items: center;
+    justify-content:center;
+   
+}
+#nav-social-section,#nav-donate-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  
 }
 
-#nav-link-section,
-#nav-social-section,
+#nav-link-section,#nav-social-section,#nav-fist-section{
+    flex-basis: calc(100%/4);
+    
+}
+#nav-donate-section{
+    flex-grow:1;
+}
+
+a{
+     text-decoration: none;
+     font-size: 1rem;
+     color: white;
+     font-weight: 400;
+}
+
+p{
+    font-family: 'Space Grotesk', sans-serif;
+    color: #747083;
+    font-size: 1rem;
+    line-height: 160%;
+}
+
+
+
 #nav-fist-section {
-    flex-basis: calc(100%/4) !important;
+        font-weight: bold;
+        padding: 3rem 2rem;
 
-}
-
-#nav-donate-section {
-    flex-grow: 1 !important;
-}
-
-#nav-fist-section {
-    font-weight: bold !important;
-    padding: 1rem 2rem !important;
-
-}
-
-#top-nav {
-    background-color: #060b19 !important;
 }
 
 
