@@ -4,7 +4,7 @@
 
 *{
 box-sizing: border-box;
-  
+cursor: url(photos/purple5.svg), auto;
 }
 
 body{
@@ -214,6 +214,23 @@ main > article>.nav-section2{
     object-fit: cover;
 }
 
+.a-color-page {
+    color: #716cae;
+}
+
+.a-color {
+    color: white;
+}
+
+.hover-attribute-white:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.hover-attribute-purple:hover {
+    text-decoration: none;
+    color: #716cae;
+}
 
 @media only screen 
      and (max-width: 480px) { 
