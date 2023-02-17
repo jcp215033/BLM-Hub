@@ -222,6 +222,7 @@ main>article>.nav-section2 {
     min-height: 100%;
     min-width: 100%;
     object-fit: cover;
+
 }
 
 .a-color-page {
@@ -310,3 +311,13 @@ main>article>.nav-section2 {
     }
 
 }
+
+@keyframes spin {
+    from { transform: rotateZ(0deg); }
+    to { transform: rotateZ(360deg); }
+}
+
+        .spinning:hover {
+            animation-name: spin;
+            animation-duration: 2s;
+        }
